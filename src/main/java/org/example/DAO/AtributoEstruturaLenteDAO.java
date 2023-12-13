@@ -11,11 +11,11 @@ import java.util.List;
 
 public class AtributoEstruturaLenteDAO extends ConexaoDB{
     private static final String TABLE_NAME = "atributos_estrutura_lente";
-    private static final String INSERT_ATRIBUTO_ESTRUTURA_LENTE = "INSERT INTO " + TABLE_NAME +" (descricao. lado_olho) VALUES(?, ?)";
+    private static final String INSERT_ATRIBUTO_ESTRUTURA_LENTE = "INSERT INTO " + TABLE_NAME +" (descricao, lado_olho) VALUES(?, ?)";
     private static final String SELECT_ATRIBUTO_ESTRUTURA_LENTE_BY_ID = "SELECT id, descricao, lado_olho FROM" + TABLE_NAME + "WHERE id = ?";
     private static final String SELECT_ALL_ATRIBUTO_ESTRUTURA_LENTE = "SELECT id, descricao, lado_olho FROM" + TABLE_NAME;
     private static final String DELETE_ATRIBUTO_ESTRUTURA_LENTE = "DELETE FROM" + TABLE_NAME + "WHERE id = ?";
-    private static final String UPDATE_ATRIBUTO_ESTRUTURA_LENTE = "UPDATE" + TABLE_NAME + "SET descricao = ?, lado_olho = ? WHERE id = ?";
+    private static final String UPDATE_ATRIBUTO_ESTRUTURA_LENTE = "UPDATE " + TABLE_NAME + " SET descricao = ?, lado_olho = ? WHERE id = ?";
     private static final String TOTAL = "SELECT count(1) FROM" + TABLE_NAME;
 
     public int count(){
