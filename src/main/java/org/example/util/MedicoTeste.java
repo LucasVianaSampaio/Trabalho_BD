@@ -27,8 +27,5 @@ public class MedicoTeste {
 
         //DELETE MEDICO
         //medicoDao.deleteMedico(1);
-
-
     }
-    
 }

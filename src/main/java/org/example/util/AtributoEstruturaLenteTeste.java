@@ -1,3 +1,5 @@
+//id
+
 package org.example.util;
 
 import org.example.DAO.AtributoEstruturaLenteDAO;
@@ -25,10 +27,7 @@ public class AtributoEstruturaLenteTeste {
         atributoEstruturaLenteDAO.updateAtributoEstruturaLente(atr);
 
         //DELETE
-        //atributoEstruturaLenteDAO.deleteAtributoEstruturaLente(1);
-
-        //DELETE
-        //atributoEstruturaLenteDAO.deleteAtributoEstruturaLente(1);
+        atributoEstruturaLenteDAO.deleteAtributoEstruturaLente(1);
     }
     
 }
